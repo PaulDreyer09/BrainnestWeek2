@@ -163,11 +163,11 @@ header a {
 }
 
 .quote-section{
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .quote-section .container{
-    padding: 100px 20%;
+    padding: 100px 24%;
 
     background-color: #e5e7eb;
 }
@@ -187,4 +187,61 @@ header a {
     font-size: 24px;
     font-weight: 800;
 }
+
+.call-to-action-section{
+    padding: 0 15%;
+    margin-bottom: 100px;
+}
+
+.call-to-action-section .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 40px 150px;
+    border-radius: 10px;
+
+    background-color: #3882f6;
+}
+
+.call-to-action-section .message{
+    flex: 2;
+    color: #f9faf8;
+}
+
+.call-to-action-section .message p{
+    color: #e5e7eb;
+}
+
+.call-to-action-section .signup-button{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    flex: 1;
+
+    max-width: 145px;
+    height: 40px;
+    line-height: 34px;
+    border-radius: 10px;
+    font-weight: 800;
+
+    border: 3px solid #f9faf8;
+    color: #f9faf8;
+}
 /* Sections styles end */
+
+/* Footer styles start */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+
+    background-color: #1F2937;
+}
+
+footer h5{
+    color: #e5e7eb;
+}
+/* Footer styles end */
