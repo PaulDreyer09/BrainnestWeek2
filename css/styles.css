@@ -133,13 +133,11 @@ header a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
 #information-section li {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     max-width: 180px;
@@ -150,13 +148,26 @@ header a {
     text-align: center;
 }
 
-#information-section .illustration-image {
+#information-section .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 180px;
     height: 180px;
-    margin-bottom: 0.5em;
 
-    border: 3px solid #3882f6;
+    margin-bottom: 0.5em;
+    padding: 5px;
+
+    border: 5px solid #3882f6;
     border-radius: 10px;
+}
+
+#information-section .illustration-image {
+    width: 100%;
+    height: auto;
+
+    margin: auto;
 }
 
 #quote-section {
@@ -275,7 +286,7 @@ footer h5 {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 567px) {
     /* Header Styles Start*/
 
     header {
@@ -292,48 +303,6 @@ footer h5 {
 
     #hero-section {
         padding: 2em 5%
-    }
-
-    #hero-section .container {
-        display: block;
-        position: relative;
-    }
-
-    #hero-section .hero-information {
-        justify-content: space-around;
-        position: absolute;
-        top: 0;
-        z-index: 2;
-
-        height: 100%;
-        padding: 0;
-
-    }
-
-    #hero-section .signup-button {
-        margin: 0 auto;
-    }
-
-    #hero-section .hero-image-container {
-        position: relative;
-        top: 0;
-        z-index: 1;
-    }
-
-    /* Overlay over the hero image */
-    #hero-section .hero-image-container:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #1f2937c7;
-        /* Change the color and opacity as desired */
-    }
-
-    #hero-section .hero-main-text,
-    #hero-section .hero-subtext {
-        text-align: center;
     }
 
     #information-section ul {
@@ -377,6 +346,51 @@ footer h5 {
 
 }
 
+@media (max-width: 767px){
+    
+    #hero-section .container {
+        display: block;
+        position: relative;
+    }
+
+    #hero-section .hero-information {
+        justify-content: space-around;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+
+        height: 100%;
+        padding: 0;
+
+    }
+    
+    #hero-section .hero-main-text,
+    #hero-section .hero-subtext {
+        text-align: center;
+    }
+
+    #hero-section .signup-button {
+        margin: 0 auto;
+    }
+
+    #hero-section .hero-image-container {
+        position: relative;
+        top: 0;
+        z-index: 1;
+    }
+
+    /* Overlay over the hero image */
+    #hero-section .hero-image-container:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1f2937c7;
+        /* Change the color and opacity as desired */
+    }
+}
+
 /*
     ████████╗ █████╗ ██████╗ ██╗     ███████╗████████╗    ███████╗████████╗██╗   ██╗██╗     ███████╗███████╗
     ╚══██╔══╝██╔══██╗██╔══██╗██║     ██╔════╝╚══██╔══╝    ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝██╔════╝
@@ -386,7 +400,7 @@ footer h5 {
        ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝   ╚═╝       ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝
 */
 
-@media (min-width: 600px) {
+@media (min-width: 567px) {
     /* Header Styles Start*/
 
 
@@ -403,16 +417,11 @@ footer h5 {
         flex-direction: row;
     }
 
-    #hero-section .hero-information,
-    #hero-section .hero-image-container {
-        z-index: 1;
-    }
-
     /* Sections Styles End*/
 
 }
 
-@media (min-width: 600px) and (max-width: 1000px) {
+@media (min-width: 567px) and (max-width: 1200px) {
 
     /* Header Styles Start*/
 
@@ -436,7 +445,7 @@ footer h5 {
         margin: 0 2vw;
     }
 
-    #information-section .illustration-image {
+    #information-section .image-container {
         width: 20vw;
         height: 20vw;
     }
