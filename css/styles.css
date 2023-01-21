@@ -61,39 +61,39 @@ header a {
 /* Header styles end */
 
 /* Sections styles start */
-#hero {
+#hero-section {
     background-color: #1F2937;
 }
 
-#hero .container {
+#hero-section .container {
     justify-content: center;
     overflow: hidden;
 }
 
-#hero .hero-information {
+#hero-section .hero-information {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#hero .hero-main-text {
+#hero-section .hero-main-text {
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
 }
 
-#hero .hero-subtext {
+#hero-section .hero-subtext {
     font-size: 18px;
     margin-bottom: 15px;
 
     color: #e5e7eb;
 }
 
-#hero .hero-image-container img {
+#hero-section .hero-image-container img {
     max-width: 100%;
 }
 
-#hero .signup-button {
+#hero-section .signup-button {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -290,16 +290,16 @@ footer h5 {
 
     /* Sections Styles Start*/
 
-    #hero {
+    #hero-section {
         padding: 2em 5%
     }
 
-    #hero .container {
+    #hero-section .container {
         display: block;
         position: relative;
     }
 
-    #hero .hero-information {
+    #hero-section .hero-information {
         justify-content: space-around;
         position: absolute;
         top: 0;
@@ -310,18 +310,18 @@ footer h5 {
 
     }
 
-    #hero .signup-button {
+    #hero-section .signup-button {
         margin: 0 auto;
     }
 
-    #hero .hero-image-container {
+    #hero-section .hero-image-container {
         position: relative;
         top: 0;
         z-index: 1;
     }
 
     /* Overlay over the hero image */
-    #hero .hero-image-container:before {
+    #hero-section .hero-image-container:before {
         content: '';
         position: absolute;
         top: 0;
@@ -331,8 +331,8 @@ footer h5 {
         /* Change the color and opacity as desired */
     }
 
-    #hero .hero-main-text,
-    #hero .hero-subtext {
+    #hero-section .hero-main-text,
+    #hero-section .hero-subtext {
         text-align: center;
     }
 
@@ -398,13 +398,13 @@ footer h5 {
 
     /* Sections Styles Start*/
 
-    #hero .container {
+    #hero-section .container {
         display: flex;
         flex-direction: row;
     }
 
-    #hero .hero-information,
-    #hero .hero-image-container {
+    #hero-section .hero-information,
+    #hero-section .hero-image-container {
         z-index: 1;
     }
 
@@ -416,7 +416,7 @@ footer h5 {
 
     /* Header Styles Start*/
 
-    header{
+    header {
         padding: 1em 5%;
     }
 
@@ -424,11 +424,11 @@ footer h5 {
 
     /* Sections Styles Start*/
 
-    #hero {
+    #hero-section {
         padding: 2em 5%
     }
 
-    #hero .hero-information {
+    #hero-section .hero-information {
         padding-right: 0;
     }
 
@@ -465,29 +465,28 @@ footer h5 {
 @media (min-width: 1000px) {
     /* Header Styles Start*/
 
-    header{
+    header {
         padding: 1em 15%;
     }
-
 
     /* Header Styles End */
 
     /* Section Styles Start */
 
-    #hero {
+    #hero-section {
         padding: 1.5em 15%;
     }
 
-    #hero .hero-information,
-    #hero .hero-image-container {
+    #hero-section .hero-information,
+    #hero-section .hero-image-container {
         flex: 1;
     }
 
-    #hero .hero-information {
+    #hero-section .hero-information {
         padding-right: 50px;
     }
 
-    #quote-section{
+    #quote-section {
         padding: 100px 24%;
     }
 
