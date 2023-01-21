@@ -3,6 +3,15 @@
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
+
+/*  ██████╗ ███████╗███████╗ █████╗ ██╗   ██╗██╗  ████████╗    ███████╗████████╗██╗   ██╗██╗     ███████╗███████╗
+    ██╔══██╗██╔════╝██╔════╝██╔══██╗██║   ██║██║  ╚══██╔══╝    ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝██╔════╝
+    ██║  ██║█████╗  █████╗  ███████║██║   ██║██║     ██║       ███████╗   ██║    ╚████╔╝ ██║     █████╗  ███████╗
+    ██║  ██║██╔══╝  ██╔══╝  ██╔══██║██║   ██║██║     ██║       ╚════██║   ██║     ╚██╔╝  ██║     ██╔══╝  ╚════██║
+    ██████╔╝███████╗██║     ██║  ██║╚██████╔╝███████╗██║       ███████║   ██║      ██║   ███████╗███████╗███████║
+    ╚═════╝ ╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝       ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝ */
+
+
 /* Main styles start */
 
 * {
@@ -24,8 +33,6 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 10px 15%;
-
     background-color: #1F2937;
 
 }
@@ -38,15 +45,10 @@ header .header-logo-text {
 header ul {
     display: flex;
     list-style-type: none;
-
 }
 
 header li {
-    margin-right: 20px;
-}
-
-header li:last-child {
-    margin: 0;
+    text-align: center;
 }
 
 header a {
@@ -57,48 +59,39 @@ header a {
 /* Header styles end */
 
 /* Sections styles start */
-.hero .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    /* padding: 0 15%; */
-
+#hero {
     background-color: #1F2937;
 }
 
-.hero .hero-information,
-.hero .hero-image-container {
-    flex: 1;
-    max-width: 35%;
+#hero .container {
+    justify-content: center;
+    overflow: hidden;
 }
 
-.hero .hero-information {
+#hero .hero-information {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    padding-right: 50px;
 }
 
-.hero .hero-main-text {
+#hero .hero-main-text {
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
 }
 
-.hero .hero-subtext {
+#hero .hero-subtext {
     font-size: 18px;
     margin-bottom: 15px;
 
     color: #e5e7eb;
 }
 
-.hero .hero-image-container img {
+#hero .hero-image-container img {
     max-width: 100%;
 }
 
-.hero .signup-button {
+#hero .signup-button {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -113,17 +106,18 @@ header a {
     color: #f9faf8;
 }
 
-.information-section{
+#information-section {
     margin-bottom: 120px;
 }
 
-.information-section .container {
+#information-section .container {
     display: flex;
     flex-direction: column;
 
+    width: 100%;
 }
 
-.information-section h3 {
+#information-section h3 {
     text-align: center;
 
     margin: 40px 0;
@@ -133,28 +127,29 @@ header a {
     color: #1F2937;
 }
 
-.information-section ul {
+#information-section ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
-.information-section li {
+#information-section li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
-    width: 180px;
+    max-width: 180px;
     margin: 0 20px;
 }
 
-.information-section p{
+#information-section p {
     text-align: center;
 }
 
-.information-section .illustration-image {
-    width: 100%;
-    /* REMOVE when image added */
+#information-section .illustration-image {
+    width: 180px;
     height: 180px;
     margin-bottom: 0.5em;
 
@@ -162,58 +157,52 @@ header a {
     border-radius: 10px;
 }
 
-.quote-section{
-    margin-bottom: 100px;
-}
-
-.quote-section .container{
-    padding: 100px 24%;
-
+#quote-section {
     background-color: #e5e7eb;
 }
 
-.quote-section blockquote{
+#quote-section blockquote {
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
 
     margin-bottom: 10px;
 
-    color:#1F2937
+    color: #1F2937
 }
 
-.quote-section .author-name{
+#quote-section .author-name {
     text-align: right;
     font-size: 24px;
     font-weight: 800;
 }
 
-.call-to-action-section{
-    padding: 0 15%;
-    margin-bottom: 100px;
+#call-to-action-section {
+    margin: 100px 0;
 }
 
-.call-to-action-section .container{
+#call-to-action-section .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 
-    padding: 40px 150px;
+    padding: 40px 10%;
     border-radius: 10px;
 
     background-color: #3882f6;
 }
 
-.call-to-action-section .message{
+#call-to-action-section .message {
     flex: 2;
     color: #f9faf8;
 }
 
-.call-to-action-section .message p{
+#call-to-action-section .message p {
     color: #e5e7eb;
 }
 
-.call-to-action-section .signup-button{
+#call-to-action-section .signup-button {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -228,10 +217,11 @@ header a {
     border: 3px solid #f9faf8;
     color: #f9faf8;
 }
+
 /* Sections styles end */
 
 /* Footer styles start */
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +231,268 @@ footer{
     background-color: #1F2937;
 }
 
-footer h5{
+footer h5 {
     color: #e5e7eb;
 }
+
 /* Footer styles end */
+
+/*About page styles start*/
+
+#about-section {
+    width: 100%;
+    padding: 0 15%;
+
+    background-color: #1F2937;
+}
+
+#about-section h2 {
+    padding: 1.5em 0;
+
+    color: #f9faf8;
+}
+
+#about-section p {
+    margin-top: 1.5em;
+
+    color: #e5e7eb;
+}
+
+#about-section p:last-child {
+    padding-bottom: 1.5em;
+}
+
+/*
+    ███╗   ███╗ ██████╗ ██████╗ ██╗██╗     ███████╗    ███████╗████████╗██╗   ██╗██╗     ███████╗███████╗
+    ████╗ ████║██╔═══██╗██╔══██╗██║██║     ██╔════╝    ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝██╔════╝
+    ██╔████╔██║██║   ██║██████╔╝██║██║     █████╗      ███████╗   ██║    ╚████╔╝ ██║     █████╗  ███████╗
+    ██║╚██╔╝██║██║   ██║██╔══██╗██║██║     ██╔══╝      ╚════██║   ██║     ╚██╔╝  ██║     ██╔══╝  ╚════██║
+    ██║ ╚═╝ ██║╚██████╔╝██████╔╝██║███████╗███████╗    ███████║   ██║      ██║   ███████╗███████╗███████║
+    ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝╚══════╝╚══════╝    ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝ 
+*/
+
+
+
+@media (max-width: 600px) {
+    /* Header Styles Start*/
+
+    header {
+        padding: 5% 1em;
+    }
+
+    header li {
+        min-width: 80px;
+    }
+
+    /* Header Styles End*/
+
+    /* Sections Styles Start*/
+
+    #hero {
+        padding: 2em 5%
+    }
+
+    #hero .container {
+        display: block;
+        position: relative;
+    }
+
+    #hero .hero-information {
+        justify-content: space-around;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+
+        height: 100%;
+        padding: 0;
+
+    }
+
+    #hero .signup-button {
+        margin: 0 auto;
+    }
+
+    #hero .hero-image-container {
+        position: relative;
+        top: 0;
+        z-index: 1;
+    }
+
+    /* Overlay over the hero image */
+    #hero .hero-image-container:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1f2937c7;
+        /* Change the color and opacity as desired */
+    }
+
+    #hero .hero-main-text,
+    #hero .hero-subtext {
+        text-align: center;
+    }
+
+    #information-section ul {
+        flex-direction: column;
+    }
+
+    #information-section li {
+        margin-bottom: 1.5em;
+    }
+
+    #information-section li:last-child {
+        margin-bottom: 0;
+    }
+
+    #quote-section {
+        padding: 100px 10%;
+    }
+
+    #call-to-action-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #call-to-action-section h4 {
+        margin-bottom: 1.5em;
+    }
+
+    #call-to-action-section p {
+        margin-bottom: 1.5em;
+    }
+
+    #call-to-action-section .signup-button {
+        min-width: 145px;
+    }
+
+    #call-to-action-section {
+        padding: 0 5%;
+    }
+
+    /* Sections Styles End*/
+
+}
+
+/*
+    ████████╗ █████╗ ██████╗ ██╗     ███████╗████████╗    ███████╗████████╗██╗   ██╗██╗     ███████╗███████╗
+    ╚══██╔══╝██╔══██╗██╔══██╗██║     ██╔════╝╚══██╔══╝    ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝██╔════╝
+       ██║   ███████║██████╔╝██║     █████╗     ██║       ███████╗   ██║    ╚████╔╝ ██║     █████╗  ███████╗
+       ██║   ██╔══██║██╔══██╗██║     ██╔══╝     ██║       ╚════██║   ██║     ╚██╔╝  ██║     ██╔══╝  ╚════██║
+       ██║   ██║  ██║██████╔╝███████╗███████╗   ██║       ███████║   ██║      ██║   ███████╗███████╗███████║
+       ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝   ╚═╝       ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝
+*/
+
+@media (min-width: 600px) {
+    /* Header Styles Start*/
+
+
+    header li {
+        min-width: 120px;
+    }
+
+    /* Header Styles End*/
+
+    /* Sections Styles Start*/
+
+    #hero .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #hero .hero-information,
+    #hero .hero-image-container {
+        z-index: 1;
+    }
+
+    /* Sections Styles End*/
+
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+
+    /* Header Styles Start*/
+
+    header{
+        padding: 0 5%;
+    }
+
+    /* Header Styles End*/
+
+    /* Sections Styles Start*/
+
+    #hero {
+        padding: 2em 5%
+    }
+
+    #hero .hero-information {
+        padding-right: 0;
+    }
+
+    #information-section li {
+        margin: 0 2vw;
+    }
+
+    #information-section .illustration-image {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #quote-section {
+        padding: 100px 15%;
+    }
+
+    #call-to-action-section {
+        padding: 0 10%;
+    }
+
+    /* Sections Styles End*/
+
+}
+
+/*
+    ██████╗ ███████╗███████╗██╗  ██╗████████╗ ██████╗ ██████╗     ███████╗████████╗██╗   ██╗██╗     ███████╗███████╗
+    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝╚══██╔══╝██╔═══██╗██╔══██╗    ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝██╔════╝
+    ██║  ██║█████╗  ███████╗█████╔╝    ██║   ██║   ██║██████╔╝    ███████╗   ██║    ╚████╔╝ ██║     █████╗  ███████╗
+    ██║  ██║██╔══╝  ╚════██║██╔═██╗    ██║   ██║   ██║██╔═══╝     ╚════██║   ██║     ╚██╔╝  ██║     ██╔══╝  ╚════██║
+    ██████╔╝███████╗███████║██║  ██╗   ██║   ╚██████╔╝██║         ███████║   ██║      ██║   ███████╗███████╗███████║
+    ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝         ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝
+*/
+
+@media (min-width: 1000px) {
+    /* Header Styles Start*/
+
+    header{
+        padding: 0 15%;
+    }
+
+
+    /* Header Styles End */
+
+    /* Section Styles Start */
+
+    #hero {
+        padding: 1.5em 15%;
+    }
+
+    #hero .hero-information,
+    #hero .hero-image-container {
+        flex: 1;
+    }
+
+    #hero .hero-information {
+        padding-right: 50px;
+    }
+
+    #quote-section{
+        padding: 100px 24%;
+    }
+
+    #call-to-action-section {
+        padding: 0 15%;
+    }
+
+    /* Section Styles End */
+
+}
