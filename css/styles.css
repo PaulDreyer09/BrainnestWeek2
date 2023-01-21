@@ -308,6 +308,7 @@ footer h5 {
 
     #information-section ul {
         flex-direction: column;
+        align-items: center;
     }
 
     #information-section li {
