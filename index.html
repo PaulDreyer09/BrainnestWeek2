@@ -10,45 +10,38 @@
 </head>
 
 <body>
-
-    <header>
-
+    <header id="header">
         <div class="container">
-            <div>
-                <img class="header-logo-text" src="./images/Logo.png"/>
+            <div  class="header-logo" >
+                <img src="./images/Logo.png" />
             </div>
-    
             <nav>
-                <ul id="nav">
-                    <li><a href="./pages/blog.html">Blog</a></li>
-                    <li><a href="./pages/about.html">About</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
-                </ul>
+                <a href="./pages/blog.html">Blog</a>
+                <a href="./pages/about.html">About</a>
+                <a href="./pages/contact.html">Contact</a>
             </nav>
         </div>
-
     </header>
 
     <main>
         <section id="hero-section">
             <div class="container">
-
                 <div class="hero-information">
                     <h2 class="hero-main-text">Welcome to our amazing website</h2>
                     <div class="hero-subtext">
-                        <p>Discover the world of software and web as we have plenty of discussions about how integrating the web and business software into your life or business can improve and accelarate your goals and ambissions.</p>
+                        <p>Discover the world of software and web as we have plenty of discussions about how integrating
+                            the web and business software into your life or business can improve and accelarate your
+                            goals and ambissions.</p>
                         <p>Learn and grow with us as we share with you what we love to research</p>
                         <p>Stay up to date and dont miss a thing!</p>
                     </div>
                     <a href="./signup" class="signup-button">Sign Up</a>
                 </div>
-
                 <div class="hero-image-container">
                     <div class="overlay"></div>
                     <img src="./images/hero-image.png"
                         alt="hero image; young man working on his laptop surrounded by his imagination">
                 </div>
-
             </div>
         </section><!-- hero section end -->
 
@@ -56,40 +49,40 @@
 
             <div class="container">
                 <h3>We also discuss software development including:</h3>
-
                 <ul>
                     <li>
-                        <div class="image-container">
-                            <img src="./images/front-end-logo.png" alt="some image; illustration image" class="illustration-image">
-                        </div>
-                        <p>Front end design</p>
+                        <figure class="image-container">
+                            <img src="./images/front-end-logo.png" alt="some image; illustration image"
+                                class="illustration-image">
+                        </figure>
+                        <figcaption>Front end design</figcaption>
                     </li>
                     <li>
-                        <div class="image-container">
-                            <img src="./images/backend-logo.jpg" alt="some image; illustration image" class="illustration-image">
-                        </div>
-                        <p>Backend server and databases</p>
+                        <figure class="image-container">
+                            <img src="./images/backend-logo.jpg" alt="some image; illustration image"
+                                class="illustration-image">
+                        </figure>
+                        <figcaption>Backend server and databases</figcaption>
                     </li>
                     <li>
-                        <div class="image-container">
-                            <img src="./images/Blockchain-logo.png" alt="some image; illustration image" class="illustration-image">
-                        </div>
-                        <p>Blockchain secure data transfer</p>
+                        <figure class="image-container">
+                            <img src="./images/Blockchain-logo.png" alt="some image; illustration image"
+                                class="illustration-image">
+                        </figure>
+                        <figcaption>Blockchain secure data transfer</figcaption>
                     </li>
                     <li>
-                        <div class="image-container">
-                            <img src="./images/cloud-integration-logo.png" alt="some image; illustration image" class="illustration-image">
-                        </div>
-                        
-                        <p>Cloud Integration</p>
+                        <figure class="image-container">
+                            <img src="./images/cloud-integration-logo.png" alt="some image; illustration image"
+                                class="illustration-image">
+                        </figure>
+                        <figcaption>Cloud Integration</figcaption>
                     </li>
                 </ul>
-
             </div>
-        </section><!-- information section end -->
+        </section>
 
         <section id="quote-section">
-
             <div class="container">
                 <blockquote cite="https://www.goodreads.com/author/quotes/17212.Marcus_Aurelius">
                     “Accept the things to which fate binds you, and love the people with whom fate brings you
@@ -99,8 +92,7 @@
                     ― Marcus Aurelius, Meditations
                 </p>
             </div>
-
-        </section><!-- information section end -->
+        </section>
 
         <section id="call-to-action-section">
             <div class="container">
@@ -111,14 +103,15 @@
                 </div>
                 <a href="#" class="signup-button">Sign up</a>
             </div>
-            
         </section>
     </main>
 
     <footer>
         <h5>Copyright&copy;</h5>
-    </footer>
-
+        <a href="#header" class="back-to-top-button">
+            <img src="./images/top-circle-svgrepo-com.svg" alt="">
+        </a>
+    </footer>    
 </body>
 
 </html>

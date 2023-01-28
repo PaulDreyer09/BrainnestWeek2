@@ -11,24 +11,19 @@
 </head>
 
 <body>
-    <header>
-
+    <header id="header">
         <div class="container">
-            <div>
+            <div  class="header-logo">
                 <a href="../index.html">
-                    <img class="header-logo-text" src="../images/Logo.png"/>
+                    <img src="../images/Logo.png" />
                 </a>
             </div>
-    
             <nav>
-                <ul id="nav">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./about.html">About</a></li>
-                </ul>
+                <a href="../index.html">Home</a>
+                <a href="../pages/blog.html">Blog</a>                
+                <a href="../pages/about.html">About</a>
             </nav>
         </div>
-
     </header>
 
     <main>
@@ -68,8 +63,6 @@
                         ***** If you are a Blog Growth Engine student DO NOT fill out this form. Email us at dummy@email.com only*****
                     </strong>
                 </p>
-
-                <!-- Email form -->
                 <div id="email-form">
                     <h3>Name</h3>
                     <div class="name-section">
@@ -87,8 +80,6 @@
                         <input type="email" name="emailAddress" id="emailAddress">
                         <label for="emailAddress">Email Address</label>                        
                     </div>
-                    
-                    
                     <h3>Message</h3>
                     <div class="message-section">                    
                         <textarea name="message" id="message"></textarea>
@@ -97,17 +88,15 @@
                     <input type="submit" value="Submit">
                     <p>Note: any spam received via this form will result in an instant IP address ban.</p>
                 </div>
-                <!-- End email form -->
-            </div>
-
-            
+            </div>            
         </section>
     </main>
 
     <footer>
-
         <h5>Copyright&copy;</h5>
-
+        <a href="#header" class="back-to-top-button">
+            <img src="../images/top-circle-svgrepo-com.svg" alt="back to top button">
+        </a>
     </footer>
 </body>
 </html>

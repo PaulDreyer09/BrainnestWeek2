@@ -18,12 +18,24 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    min-width: 100%;
+    transition-delay: 2s;
+    
 }
 
 /* Header styles start */
 header {
+    position:fixed;
+    min-width: 100%;
+    top: 0;
+    z-index: 9999;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,17 +53,26 @@ header .container {
     width: 100%;
 }
 
-header .header-logo-text {
+header .header-logo {    
     max-height: 3em;
 }
 
-header ul {
-    display: flex;
-    list-style-type: none;
+.header-logo img {
+    max-height: 3em;
 }
 
-header li {
+header nav {
+    display: flex;
+    min-width: 25%;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+header a {
+    display: block;
     text-align: center;
+    line-height: 3em;
+    min-width: 60px;
 }
 
 header a {
@@ -66,6 +87,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5em;
 }
 
 /* Sections styles start */
@@ -165,7 +187,7 @@ section {
     margin: 0 20px;
 }
 
-#information-section p {
+#information-section figcaption {
     text-align: center;
 }
 
@@ -269,6 +291,15 @@ footer h5 {
     color: #e5e7eb;
 }
 
+footer img{
+    max-width: 40px;
+}
+
+footer .back-to-top-button{
+    display: block;
+    position: absolute;
+    right: 20px;
+}
 /* Footer styles end */
 
 /*About page styles start*/
@@ -313,18 +344,22 @@ footer h5 {
     }
 
     header li {
-        min-width: 80px;
+        min-width: 3em;
     }
 
     /* Header Styles End*/
 
     /* Sections Styles Start*/
     section .container {
-        width: 94%;
+        width: 90%;
     }
 
-    #hero-section {
+    #hero-section {        
         padding: 2em 5%
+    }
+
+    #hero-section .hero-image-container{
+        min-height: 540px;
     }
 
     #hero-section .hero-main-text {
