@@ -3,7 +3,6 @@
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
-
 /*
     ██████╗ ███████╗███████╗ █████╗ ██╗   ██╗██╗  ████████╗    ███████╗████████╗██╗   ██╗██╗     ███████╗███████╗
     ██╔══██╗██╔════╝██╔════╝██╔══██╗██║   ██║██║  ╚══██╔══╝    ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝██╔════╝
@@ -12,9 +11,6 @@
     ██████╔╝███████╗██║     ██║  ██║╚██████╔╝███████╗██║       ███████║   ██║      ██║   ███████╗███████╗███████║
     ╚═════╝ ╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝       ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝ 
 */
-
-
-/* Main styles start */
 
 * {
     box-sizing: border-box;
@@ -26,17 +22,23 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-/* Main styles end */
-
 /* Header styles start */
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 5em;
+
+    background-color: #1F2937;
+}
+
+header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    background-color: #1F2937;
-
+    width: 100%;
 }
 
 header .header-logo-text {
@@ -60,9 +62,24 @@ header a {
 
 /* Header styles end */
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Sections styles start */
+section {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #hero-section {
-    background-color: #1F2937;
+    background-color: rgb(31, 41, 55);
 }
 
 #hero-section .container {
@@ -83,11 +100,15 @@ header a {
     color: #f9faf8;
 }
 
-#hero-section .hero-subtext {
+#hero-section .hero-subtext p {
+    padding: 1em 0;
     font-size: 18px;
-    margin-bottom: 15px;
-
+    
     color: #e5e7eb;
+}
+
+#hero-section .hero-subtext {
+    margin-bottom: 15px;
 }
 
 #hero-section .hero-image-container img {
@@ -255,8 +276,6 @@ footer h5 {
 
 #about-section {
     width: 100%;
-    padding: 0 15%;
-
     background-color: #1F2937;
 }
 
@@ -290,8 +309,8 @@ footer h5 {
 @media (max-width: 567px) {
     /* Header Styles Start*/
 
-    header {
-        padding: 5% 1em;
+    header .container {
+        min-width: 94%;
     }
 
     header li {
@@ -301,16 +320,19 @@ footer h5 {
     /* Header Styles End*/
 
     /* Sections Styles Start*/
+    section .container {
+        width: 94%;
+    }
 
     #hero-section {
         padding: 2em 5%
     }
 
-    #hero-section .hero-main-text{
+    #hero-section .hero-main-text {
         font-size: 28px;
     }
 
-    #hero-section .hero-subtext{
+    #hero-section .hero-subtext {
         font-size: 12px;
     }
 
@@ -356,8 +378,8 @@ footer h5 {
 
 }
 
-@media (max-width: 767px){
-    
+@media (max-width: 767px) {
+
     #hero-section .container {
         display: block;
         position: relative;
@@ -373,7 +395,7 @@ footer h5 {
         padding: 0;
 
     }
-    
+
     #hero-section .hero-main-text,
     #hero-section .hero-subtext {
         text-align: center;
@@ -411,8 +433,12 @@ footer h5 {
 */
 
 @media (min-width: 567px) {
-    /* Header Styles Start*/
 
+    /* Header Styles Start*/
+    section .container,
+    header .container {
+        max-width: 540px;
+    }
 
     header li {
         min-width: 120px;
@@ -429,6 +455,14 @@ footer h5 {
 
     /* Sections Styles End*/
 
+}
+
+@media (min-width: 768px) {
+
+    section .container,
+    header .container {
+        max-width: 720px;
+    }
 }
 
 @media (min-width: 567px) and (max-width: 1200px) {
@@ -481,20 +515,17 @@ footer h5 {
     ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝         ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝
 */
 
-@media (min-width: 1000px) {
-    /* Header Styles Start*/
-
-    header {
-        padding: 1em 15%;
-    }
-
-    /* Header Styles End */
+@media (min-width: 992px) {
 
     /* Section Styles Start */
-
-    #hero-section {
-        padding: 1.5em 15%;
+    section .container,
+    header .container {
+        max-width: 960px;
     }
+
+    /* #hero-section {
+        padding: 1.5em 15%;
+    } */
 
     #hero-section .hero-information,
     #hero-section .hero-image-container {
@@ -515,4 +546,12 @@ footer h5 {
 
     /* Section Styles End */
 
+}
+
+@media (min-width: 1200px) {
+
+    section .container,
+    header .container {
+        max-width: 1100px;
+    }
 }
