@@ -42,8 +42,7 @@ header .container {
 }
 
 header .header-logo-text {
-    font-size: 24px;
-    color: #f9faf8;
+    max-height: 3em;
 }
 
 header ul {
